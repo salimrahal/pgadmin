@@ -25,3 +25,14 @@ cp  /home/salim/Programs/pgadmin4/pgadmin4Bck/pgadmin4 /home/salim/Programs/pgad
 
 5- make sure the service point to the shell script:
 nano /etc/systemd/system/pgadmin4.service 
+
+
+Appendix:
+The script:
+
+:~/Programs/pgadmin4$ more pgadmin4/pgAdmin4/pgadmin4
+#!/bin/bash
+cd ~/Programs/pgadmin4/pgadmin4/pgAdmin4
+source bin/activate
+python3 lib/python3.6/site-packages/pgadmin4/pgAdmin4.py
+
